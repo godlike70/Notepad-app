@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Notepad</h1>
+    </header>
+    <div class="container">
+        <label for="modeSelector">Choose Mode:</label>
+        <select id="modeSelector">
+            <option value="text">Plain Text</option>
+            <option value="code">Code</option>
+        </select>
+        <textarea id="noteArea" placeholder="Write your notes here..."></textarea>
+        <pre id="codeDisplay" class="language-javascript" style="display: none;"><code></code></pre>
+        <div class="buttons">
+            <button id="saveBtn">Save</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+    </div>
+    <footer>
+        <p>Notepad App &copy; 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
